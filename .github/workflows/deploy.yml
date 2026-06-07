@@ -1,0 +1,11 @@
+﻿name: Build and Push Docker Images
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Backend
+        run: docker build -t backend ./backend
+      - name: Build Frontend
+        run: docker build -t frontend ./frontend
