@@ -1,0 +1,9 @@
+﻿node_modules/
+**/bin/
+**/obj/
+**/dist/
+.vscode/
+.idea/
+*.log
+.DS_Store
+.env
